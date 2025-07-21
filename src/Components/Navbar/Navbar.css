@@ -1,0 +1,130 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 4em;
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 900;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar-left:hover{
+    color:#7843E9;
+}
+
+.navbar-left img{
+    width: 45px;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 4vw;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+.navbar-menu a{
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover{
+    color: #7843E9;
+    }
+}
+
+.toggle-container{
+    display: flex;
+}
+
+.navbar-underline{
+    background-color: #7843E9;
+    width:30%;
+    height:0.7vh;
+    border-radius: 5px;  
+  }
+
+.menu-bar,.menu-icon{
+    display: none;
+}
+
+.menu-bar-dropdown{
+    display: none;
+}
+
+
+@media (max-width:1024px){
+    .toggle-container{
+        display: none;
+    }
+    .navbar-underline{
+        height:0.5vh;
+      }
+}
+
+@media (max-width:768px) {
+    .navbar{
+        font-size: 1em;
+        padding: 1em;
+        position: relative;
+        top: 0;
+        z-index: 2;
+    }
+
+    .navbar-menu, .navbar button{
+        display: none;
+    }
+
+
+    .menu-bar-dropdown{
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        letter-spacing: 1px;
+        font-size: 1em;
+        font-weight: 700;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        border-top: 2px solid #5555;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px px 50px;
+    }
+    
+    .menu-bar-dropdown a:nth-child(5){
+        place-items: end;
+    }
+
+    .menu-bar-dropdown a
+    {
+        width: 100%;
+        text-align: end;
+        padding: 1.5em 1em;
+        border-bottom: 1px solid #5555;
+        cursor: pointer;
+        &:hover{
+            color: #7843E9;
+            }
+    }
+
+    .menu-bar-dropdown:nth-child(4){
+        border-bottom:none;
+    }
+
+    .menu-icon{
+    font-size: 2em;
+    display: block;
+    }
+}

@@ -1,0 +1,120 @@
+.projects{
+    background-color:#cac5c51b;
+    padding: 17vh 4vw;
+}
+
+.projects-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    margin-bottom: 14vh;
+}
+
+.projects-header h1{
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2.3em;
+}
+
+.projects-header p{
+    color: #555555;
+    font-size:18px;
+    text-align: center;
+    width: 70%;
+    line-height: 30px;
+}
+
+.underline-container{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
+
+
+.project{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 2em;
+}
+
+.project img{
+    max-width: 100%;
+    color: #555555;
+}
+
+.project-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.project-about p{
+    color: #555555;
+    font-size:1em;
+    line-height: 5vh;
+}
+
+.project-about button{ 
+    margin-top: 1.5vh;
+    padding: 1.3vw 3vw;
+    background-color: #7843E9;
+    color: white;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 700;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    width: max-content;
+}
+
+@media (max-width:1024px) {
+    .projects{
+        padding: 10vh 7vw;
+    }
+    .projects-header{
+        gap: 2vh;
+        margin-bottom: 10vh;
+    }
+    .project{
+        grid-template-columns: 1fr;
+    }
+    .project-about{
+        padding: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-about p{
+        color: #555555;
+        font-size:1.2em;
+        line-height: 3vh;
+    }
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        gap: 8vh;
+    }
+}
+
+@media (max-width:764px){
+    .projects{
+        background-color:#cac5c51b;
+        padding: 6vh 2vw;
+    }
+    .projects-header p{
+        width: 100%;
+    }
+    .project-about p{
+        font-size:1.1em;
+        line-height: 5vh;
+    }
+}

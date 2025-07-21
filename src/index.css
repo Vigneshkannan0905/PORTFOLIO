@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Source Sans pro',sans-serif;
+}
+
+.underline{
+  background-color: #7843E9;
+  width:32px;
+  height:0.9vh;
+  border-radius: 5px;
+}
+
+.skill{
+  background-color: #E7E7E7;
+  border-radius: 5px;
+  width: max-content;
+  padding: 2vh 2vw;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cursor:hover{
+  cursor: pointer;
+}
+
+@keyframes fadeIn{
+  to{
+    opacity:1
+  }
+}
+
+@keyframes fadeOut{
+  to{
+    opacity:0
+  }
+}

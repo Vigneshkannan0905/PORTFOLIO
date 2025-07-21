@@ -1,0 +1,166 @@
+.contact-container{
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.75), rgba(245, 245, 245, 0.8)) center center, url('../../assets/common-bg.svg');
+    padding-top: 20vh;
+}
+
+.contact-container-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.contact-container-header h1{
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+.contact-container-header p{
+    color: #555555;
+    font-size:18px;
+    text-align: center;
+    width: 55%;
+    line-height: 30px;
+}
+
+.contact-form{
+    place-items: center;
+    padding: 15vh 20vh;
+}
+
+form{
+    width: 70%;
+    background-color: white;
+    padding: 3vh 0.5vw;
+    padding-bottom: 8vh;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    padding: 3vh 5vh;
+}
+
+.input label {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #555555;
+}
+
+.input input{
+    padding: 4vh;
+    background-color: #F0F0F0;
+    border: none;
+    height: 9vh;
+    border-radius: 5px;
+
+    &:focus{
+        outline: none;
+    }
+
+    &::placeholder{
+        font-size: 14px;
+        font-weight: 700;
+        color: #9c9b9b;
+    }
+}
+
+.input textarea{
+    max-width: 100%;
+    height: 50vh; 
+    padding: 4vh;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 5px;
+
+    &:focus{
+        outline: none;
+    }
+
+    &::placeholder{
+        font-size: 14px;
+        font-weight: 700;
+        color: #9c9b9b;
+    }
+}
+
+.submit-button{
+    display: flex;
+    justify-content: end;
+    padding-right: 5vh;
+}
+
+.contact-form button{   
+    padding: 1.3vw 3vw;
+    background-color: #7843E9;
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+@media (max-width:1024px){
+    .contact-container{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    
+    .contact-container-header{
+        gap: 2vh;
+    }
+
+    .contact-container-header p{
+        width: 80%;
+    }
+    
+    .contact-form{
+        place-items: center;
+        padding: 5vh 12vw;
+    }
+    
+    form{
+        width: 100%;
+        background-color: white;
+        padding: 2vh 0vw;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap: 0.7em;
+        padding: 3vh 5vh;
+    }
+    
+    .input label {
+        font-size: 1em;
+    }
+    
+    .input input{
+        padding: 2vh;
+        height: 5vh;
+    }
+    
+    .input textarea{
+        max-width: 100%;
+        height: 30vh; 
+        padding: 2vh;
+    }
+}
+
+@media (max-width:768px) {
+    .input{
+        padding: 3vh;
+    }
+    .input textarea{
+        max-width: 100%;
+        height: 20vh; 
+        padding: 2vh;
+    }
+}
