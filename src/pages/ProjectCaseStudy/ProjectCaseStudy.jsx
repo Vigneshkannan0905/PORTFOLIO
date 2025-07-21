@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import {assetes} from '../../assets/assets.js'
 
 
-const ProjectCaseStudy = ({setActiveSection}) => {
+const ProjectCaseStudy = () => {
 
     const {id} =useParams()
     const navigate=useNavigate()
@@ -19,7 +19,7 @@ const ProjectCaseStudy = ({setActiveSection}) => {
         },
         {
             project_name:"My Portfolio",
-            project_link:"",
+            project_link:"https://portfolio-eosin-pi-49.vercel.app/",
             project_description:["This portfolio is a responsive React-based web application designed and styled entirely with pure CSS.", "It showcases my skills, projects, and background in a clean and user-friendly layout."," Key features include a downloadable resume and a fully functional contact form that allows visitors to send messages directly to my email."],
             tools_used:['HTML','CSS','React']
         },

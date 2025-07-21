@@ -39,7 +39,7 @@ function App() {
               <section id="contact" ref={sectionRefs.contact}><ContactForm /></section>
             </>
           }/>
-          <Route path='/project/:id' element={<ProjectCaseStudy setActiveSection={setActiveSection}/>}/>
+          <Route path='/project/:id' element={<ProjectCaseStudy/>}/>
         </Routes>
         <Footer/>
     </div>
