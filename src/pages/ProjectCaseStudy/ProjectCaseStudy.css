@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 10vw;
     padding: 3vw;
+    background-color:#cac5c51b;
 }
 
 .project-preview img{

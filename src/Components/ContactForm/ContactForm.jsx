@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './ContactForm.css'
 import * as motion from "motion/react-client"
 import emailjs from '@emailjs/browser';
@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
     const form = useRef()
+    const [isLoading, setIsLoading] = useState(false)
 
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -15,6 +16,7 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     emailjs.sendForm(
         serviceID,
@@ -24,10 +26,13 @@ const ContactForm = () => {
     ).then(
       (result) => {
         alert("Message sent successfully!");
+        form.current.reset(); 
+        setIsLoading(false);
       },
       (error) => {
         alert("Failed to send message.");
         console.log(error.text);
+        setIsLoading(false);
       }
     );
   };
@@ -51,13 +56,27 @@ const ContactForm = () => {
                 </div>
                 <div className="input">
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" id="" placeholder='Enter Your Name' required></textarea>
+                    <textarea name="message" id="" placeholder='Enter Your Message' required></textarea>
                 </div>
                 <div className="submit-button">
-                    <button className='cursor'>
-                        <motion.div whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.8 }}>
-                            Submit
+                    <button className='cursor' disabled={isLoading}>
+                        <motion.div whileHover={!isLoading ? { scale: 1.2 } : {}}
+                            whileTap={!isLoading ? { scale: 0.8 } : {}}>
+                            {isLoading ? (
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    <div style={{
+                                        width: '16px',
+                                        height: '16px',
+                                        border: '2px solid #f3f3f3',
+                                        borderTop: '2px solid #3498db',
+                                        borderRadius: '50%',
+                                        animation: 'spin 1s linear infinite'
+                                    }}></div>
+                                    Sending...
+                                </div>
+                            ) : (
+                                'Submit'
+                            )}
                         </motion.div>
                     </button>
                 </div>

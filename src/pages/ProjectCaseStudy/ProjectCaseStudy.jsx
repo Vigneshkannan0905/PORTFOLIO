@@ -15,19 +15,19 @@ const ProjectCaseStudy = () => {
             project_name:"Tomato",
             project_link:"https://merntomatofrontend.vercel.app/",
             project_description:['Developed and deployed a responsive full-stack food ordering platform with separate modules for Frontend, Admin Panel, and Backend.','Frontend : Implemented user authentication (login/register), cart functionality, order tracking, and stripe-based online payment integration.','Admin Panel : Enabled food item management (add/remove) and real-time order status updates.','Backend :  Built RESTful APIs using Node.js and Express to handle requests from both frontend and admin panel; integrated with MongoDB for centralized data Management.'],
-            tools_used:['MERN Stack','Stripe']
+            tools_used:['MERN Stack','Stripe','Git','Github']
         },
         {
             project_name:"My Portfolio",
             project_link:"https://portfolio-eosin-pi-49.vercel.app/",
             project_description:["This portfolio is a responsive React-based web application designed and styled entirely with pure CSS.", "It showcases my skills, projects, and background in a clean and user-friendly layout."," Key features include a downloadable resume and a fully functional contact form that allows visitors to send messages directly to my email."],
-            tools_used:['HTML','CSS','React']
+            tools_used:['HTML','CSS','React','Git','Github']
         },
         {
-            project_name:"Shopify",
-            project_link:"https://react-ecommerce-one-wine.vercel.app/",
-            project_description:["Developed a static e-commerce website using React and integrated DummyJSON API as a mock backend.","Implemented seamless API communication with Axios, leveraged React Hooks for state and lifecycle management, and incorporated efficient event handling to deliver a responsive and interactive user experience."],
-            tools_used:['HTML','CSS','React']
+            project_name:"College Symposium Web Portal",
+            project_link:"https://ignitia-2025.web.app/",
+            project_description:["Developed a fully responsive Symposium Website using HTML, CSS, and JavaScript","Featuring a modern hero section, interactive event timeline, student registration form, poster showcase slider, team and staff coordinator profiles, and structured footer, ensuring an engaging and user-friendly experience for participants."],
+            tools_used:['HTML','CSS','Javascript']
         }
     ]
 
@@ -77,8 +77,6 @@ const ProjectCaseStudy = () => {
                             <div className="skill">{tool}</div>
                         ))
                     }
-                    <div className="skill">Git</div>
-                    <div className="skill">Github</div>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ const Projects = () => {
                     <img src={assetes.project_1} alt="" />
                 </div>
                 <div className='project-about'>
-                    <h2>Tomato</h2>
+                    <h2>Full Stack Food Ordering Platform</h2>
                     <p>Developed and deployed a responsive full-stack food ordering platform with separate modules for Frontend, Admin Panel, and Backend. Built RESTful APIs using Node.js and Express to handle requests from both frontend and admin panel; integrated with MongoDB for centralized data Management.</p>
                     <button className="button cursor" onClick={()=>navigate(`project/${1}`)}>
                         <motion.div 
@@ -50,8 +50,8 @@ const Projects = () => {
                     <img src={assetes.project_3} alt="" />
                 </div>
                 <div className='project-about'>
-                    <h2>Shopify</h2>
-                    <p>Developed a static e-commerce website using React and integrated DummyJSON API as a mock backend. Implemented seamless API communication with Axios, leveraged React Hooks for state and lifecycle management, and incorporated efficient event handling to deliver a responsive and interactive user experience.</p>
+                    <h2>College Symposium Web Portal</h2>
+                    <p>Developed a fully responsive Symposium Website using HTML, CSS, and JavaScript featuring a modern hero section, interactive event timeline, student registration form, poster showcase slider, team and staff coordinator profiles, and structured footer, ensuring an engaging and user-friendly experience for participants.</p>
                     <button className="button cursor">
                         <motion.div 
                         whileHover={{scale:1.2}} whileTap={{ scale: 0.8 }} onClick={()=>navigate(`project/${3}`)}>
