@@ -29,7 +29,7 @@ const About = () => {
                 <button className='cursor'>
                     <motion.div whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.8 }}>
-                        <a href={resume} download="VIGNESHWARAN T - Resume.pdf">RESUME <LuDownload /></a>
+                        <a href={resume} download>RESUME <LuDownload /></a>
                     </motion.div>
                 </button>
             </div>
