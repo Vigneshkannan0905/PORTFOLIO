@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css'
 import * as motion from "motion/react-client"
 import { LuDownload } from "react-icons/lu";
+import resume from '../../assets/VIGNESHWARAN T - Resume.pdf';
 
 
 const About = () => {
@@ -28,7 +29,7 @@ const About = () => {
                 <button className='cursor'>
                     <motion.div whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.8 }}>
-                        <a href="/src/assets/VIGNESHWARAN T - Resume.pdf" download="VIGNESHWARAN T - Resume.pdf">RESUME <LuDownload /></a>
+                        <a href={resume} download="VIGNESHWARAN T - Resume.pdf">RESUME <LuDownload /></a>
                     </motion.div>
                 </button>
             </div>
