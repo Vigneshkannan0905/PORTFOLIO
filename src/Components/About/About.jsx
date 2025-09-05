@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 import * as motion from "motion/react-client"
 import { LuDownload } from "react-icons/lu";
-import resume from '../../assets/VIGNESHWARAN T - Resume.pdf';
+import resume from '../../../public/VIGNESHWARAN T - Resume.pdf';
 
 
 const About = () => {
